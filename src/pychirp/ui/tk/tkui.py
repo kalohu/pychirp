@@ -1,6 +1,7 @@
 from tkinter import Tk
 
 from pychirp.ui.tk.mainwindow import MainWindow
+from pychirp.ui.tk.mainmenubar import MainMenubar
 
 
 class TkUI(Tk):
@@ -16,6 +17,7 @@ class TkUI(Tk):
 
     def _init_components(self):
         MainWindow(self)
+        MainMenubar(self)
 
     def show(self):  # pragma: no cover
         self.mainloop()
